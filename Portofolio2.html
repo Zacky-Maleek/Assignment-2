@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 1 Portofolio</title>
+        <link rel="stylesheet" type="text/css" href="Portofolio.css">
+    </head>
+    <body>
+    <div class="col-12 col-s-12 header-and-nav">
+    <header class="col-4 col-s-4 header">
+        <h1>My Portofolio</h1>
+    </header>
+    <nav class="col-8 col-s-8">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="Portofolio.html">Home</a></li>
+            <li class="nav-item"><a href="#">Product</a></li>
+            <li class="nav-item"><a href="#">Gallery</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><a href="#">Inventory</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <section>
+        <div class="sidenav">
+            <div class="profile">
+                <img src="guest 2.png" alt="" width="100" height="100">
+    
+                <div class="name">
+                    Guest
+                </div>
+                <div class="job">
+                    Programmer
+                </div>
+            </div>
+    
+            <div class="sidenav-url">
+                <div class="url">
+                    <a href="#profile" class="active">Login</a>
+                    <hr align="center">
+                </div>
+                <div class="url">
+                    <a href="#settings">Pengaturan</a>
+                    <hr align="center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-12 col-s-12 self-intro">
+        <div class="main">
+            <h2>Tentang Saya</h2>
+            <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-pen fa-xs edit"></i>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Nama : <span id="nama"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Role : <span id="role"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Availability : <span id="availability"></span></td>
+                            <tr>
+                                <td>Usia : <span id="usia"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Lokasi : <span id="lokasi"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Email : <span id="email"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+      </section>
+
+    <script>
+
+        // sessionStorage.getItem('myObject');
+
+        //const Nama = localStorage.getItem('Nama');
+        //const Role = localStorage.getItem('Role');
+        //const Availability = localStorage.getItem('Availability');
+        //const Usia = localStorage.getItem('Usia');
+        //const Lokasi = localStorage.getItem('Lokasi');
+        //const Email = localStorage.getItem('Email');
+
+        //document.getElementById('Nama').textContent = Nama;
+        //document.getElementById('Role').textContent = Role;
+        //document.getElementById('Availability').textContent = Availability;
+        //document.getElementById('Usia').textContent = Usia;
+        //document.getElementById('Lokasi').textContent = Lokasi;
+        //document.getElementById('Email').textContent = Email;
+
+        document.getElementById("nama").innerHTML = localStorage.getItem("nama");
+        document.getElementById("role").innerHTML = localStorage.getItem("role");
+        document.getElementById("availability").innerHTML = localStorage.getItem("availability");
+        document.getElementById("usia").innerHTML = localStorage.getItem("usia");
+        document.getElementById("lokasi").innerHTML = localStorage.getItem("lokasi");
+        document.getElementById("email").innerHTML = localStorage.getItem("email");
+
+        localStorage.removeItem("nama");
+        localStorage.removeItem("role");
+        localStorage.removeItem("availability");
+        localStorage.removeItem("usia");
+        localStorage.removeItem("lokasi");
+        localStorage.removeItem("email");
+         
+    </script>
+
+    </body>
+  </html>
+    

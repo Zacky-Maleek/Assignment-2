@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 1 Portofolio</title>
+        <link rel="stylesheet" type="text/css" href="Portofolio.css">
+    </head>
+    <body>
+    <div class="col-12 col-s-12 header-and-nav">
+    <header class="col-4 col-s-4 header">
+        <h1>My Portofolio</h1>
+    </header>
+    <nav class="col-8 col-s-8">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="Portofolio.html">Home</a></li>
+            <li class="nav-item"><a href="#">Product</a></li>
+            <li class="nav-item"><a href="#">Gallery</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><a href="#">Inventory</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <section>
+        <div class="sidenav">
+            <div class="profile">
+                <img src="guest 2.png" alt="" width="100" height="100">
+    
+                <div class="name">
+                    Guest
+                </div>
+                <div class="job">
+                    Programmer
+                </div>
+            </div>
+    
+            <div class="sidenav-url">
+                <div class="url">
+                    <a href="#profile" class="active">Login</a>
+                    <hr align="center">
+                </div>
+                <div class="url">
+                    <a href="#settings">Pengaturan</a>
+                    <hr align="center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-12 col-s-12 self-intro">
+        <div class="main">
+            <h2>Tentang Saya</h2>
+            <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-pen fa-xs edit"></i>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Nama:</td>
+                            </tr>
+                            <tr>
+                                <td>Role:</td>
+                            </tr>
+                            <tr>
+                                <td>Availability:</td>
+                            </tr>
+                            <tr>
+                                <td>Usia:</td>
+                            </tr>
+                            <tr>
+                                <td>Lokasi:</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+      </section>
+
+    <section class="col-12 col-s-12 newsletter-signup">
+    <form class="col-6 col-s-6 newsletter-signup-form" action="Portofolio2.html">
+        <label for="Nama">Nama:</label><br />
+        <input type="text" id="nama" name="nama"/>
+        <br />
+        <label for="Role">Role:</label><br />
+        <input type="text" id="role" name="role"/>
+        <br/>
+        <label for="Availability">Availability:</label><br />
+        <input type="text" id="availability" name="availability"/>
+        <br/>
+        <label for="Usia">Usia:</label><br />
+        <input type="text" id="usia" name="usia"/>
+        <br/>
+        <label for="Lokasi">Lokasi:</label><br />
+        <input type="text" id="lokasi" name="lokasi"/>
+        <br/>
+        <label for="Email">Email:</label><br />
+        <input type="text" id="email" name="email"/>
+        <br/>
+        <button type="submit" onclick="simpanForm()">Submit</button>
+    </form>
+    </section>
+
+    <script>
+        // const form = document.getElementById('form');
+        // const Nama = document.getElementById('Nama');
+        // const Role = document.getElementById('Role');
+        // const Availability = document.getElementById('Availability');
+        // const Usia = document.getElementById('Usia');
+        // const Lokasi = document.getElementById('Lokasi');
+        // const Email = document.getElementById('Email');
+
+        
+        // form.addEventListener('submit', function(e){
+        //     e.preventDefault();
+
+        //     const NamaValue = Nama.value;
+        //     const RoleValue = Role.value;
+        //     const AvailabilityValue = Availability.value;
+        //     const UsiaValue = Usia.value;
+        //     const LokasiValue = Usia.value;
+        //     const EmailValue = Email.value;
+
+        //     sessionStorage.setItem('myObject', JSON.stringify({fn: NamaValue, ln: RoleValue, ln: AvailabilityValue, ln: UsiaValue, ln: LokasiValue, ln: EmailValue }))
+
+        //     localStorage.setItem('Nama', NamaValue);
+        //     localStorage.setItem('Role', RoleValue); 
+        //     localStorage.setItem('Availability',AvailabilityValue);
+        //     localStorage.setItem('Usia', UsiaValue);
+        //     localStorage.setItem('Lokasi', LokasiValue);
+        //     localStorage.setItem('Email', EmailValue);
+            
+        //      window.location.href = "Portofolio2.html";
+        // })
+        function simpanForm() {
+            const nama = document.getElementById("nama").value;
+            const role = document.getElementById("role").value;
+            const availability = document.getElementById("availability").value;
+            const usia = document.getElementById("usia").value;
+            const lokasi = document.getElementById("lokasi").value;
+            const email = document.getElementById("email").value;
+
+            localStorage.setItem("nama", nama);
+            localStorage.setItem("role", role);
+            localStorage.setItem("availability", availability);
+            localStorage.setItem("usia", usia);
+            localStorage.setItem("lokasi", lokasi);
+            localStorage.setItem("email", email);
+        }
+
+    </script>
+
+    </body>
+</html>
+  
